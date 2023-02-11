@@ -1,0 +1,361 @@
+.discoverRomania {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+
+  .dRBanner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/images/discoverRomaniaImg01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .dRBannerTitle {
+      position: relative;
+      text-align: center;
+      padding: 0 1rem;
+
+      h1,
+      h2,
+      p,
+      a {
+        font-family: $helveticaRegular;
+        color: $colorF;
+        letter-spacing: 0.25rem;
+      }
+
+      h1 {
+        font-size: 5rem;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 3.5rem;
+        margin: 0;
+      }
+
+      p {
+        font-size: 2.5rem;
+        margin: 2.5rem 0 3.5rem 0;
+      }
+
+      a {
+        font-size: 2rem;
+        background-color: $colorAA;
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        &:hover {
+          box-shadow: inset 0 0 0 2.5rem $colorA;
+        }
+      }
+    }
+  }
+
+  .dRInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: $colorA;
+
+    .dRInfoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-flow: row wrap;
+      padding: 15.75rem 1rem 13.25rem 1rem;
+
+      .dRInfoInner {
+        width: 35.25rem;
+        text-align: left;
+        padding: 6rem 10.5rem 0 0;
+
+        h1 {
+          font-size: 2.5rem;
+          font-family: $helveticaRegular;
+          color: $colorF;
+          margin: 0;
+          word-spacing: 1rem;
+        }
+
+        p {
+          font-family: $helveticaRegular;
+          font-size: 1.25rem;
+          color: $colorI;
+          line-height: 2.15rem;
+          word-spacing: 1.15rem;
+          margin: 3.5rem 0;
+        }
+      }
+
+      .dRInfoImg {
+        width: 35.25rem;
+        height: 46.25rem;
+        overflow: hidden;
+
+        &:hover {
+          .dRInfoImgInner {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+
+            a {
+              opacity: 1;
+            }
+          }
+        }
+
+        .dRInfoImgInner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-image: url('../../assets/images/discoverRomaniaImg02.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+          -webkit-transition: $transitionTime;
+          -moz-transition: $transitionTime;
+          -ms-transition: $transitionTime;
+          -o-transition: $transitionTime;
+          transition: $transitionTime;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: $colorF;
+            font-family: $helveticaRegular;
+            font-size: 2rem;
+            letter-spacing: 0.5rem;
+            background-color: $colorAA;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .dRLandmarks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: $colorA;
+    padding: 5.75rem 0;
+
+    .dRLandmarksContainer {
+      width: 100%;
+      height: 18.75rem;
+      margin: 1.1rem 0;
+      overflow: hidden;
+
+      &:hover {
+        .dRLandmarksInner {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+
+      .dRLandmarksInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transition: $transitionTime;
+        -moz-transition: $transitionTime;
+        -ms-transition: $transitionTime;
+        -o-transition: $transitionTime;
+        transition: $transitionTime;
+
+        &.countryside {
+          background-image: url('../../assets/images/discoverRomaniaImg03.png');
+        }
+
+        &.cities {
+          background-image: url('../../assets/images/discoverRomaniaImg04.png');
+        }
+
+        &.landmarks {
+          background-image: url('../../assets/images/discoverRomaniaImg05.png');
+        }
+
+        &:hover {
+          a {
+            opacity: 1;
+          }
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          color: $colorF;
+          font-family: $helveticaRegular;
+          font-size: 3.5rem;
+          letter-spacing: 0.5rem;
+          background-color: $colorAA;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+//* MEDIA QUERIES
+@media screen and (max-width: 1366px) {
+  .discoverRomania {
+    .dRInfo {
+      .dRInfoContainer {
+        padding: 5rem 1rem 2.5rem 1rem;
+        .dRInfoInner {
+          padding: 2.5rem 1rem;
+        }
+      }
+    }
+
+    .dRLandmarks {
+      padding: 1.4rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discoverRomania {
+    .dRBanner {
+      .dRBannerTitle {
+        h1 {
+          font-size: 3.5rem;
+        }
+        h2 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 2rem;
+          margin: 1.5rem 0 2.5rem 0;
+        }
+        a {
+          font-size: 1.75rem;
+        }
+      }
+    }
+
+    .dRInfo {
+      .dRInfoContainer {
+        padding: 0 1rem;
+
+        .dRInfoInner {
+          width: 25rem;
+          padding: 2.5rem 0 0.25rem 0;
+
+          p {
+            margin: 1.25rem 0;
+          }
+        }
+
+        .dRInfoImg {
+          width: 25rem;
+          height: 30rem;
+
+          .dRInfoImgInner {
+            a {
+              letter-spacing: 0.25rem;
+            }
+          }
+        }
+      }
+    }
+
+    .dRLandmarks {
+      .dRLandmarksContainer {
+        .dRLandmarksInner {
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .discoverRomania {
+    .dRBanner {
+      .dRBannerTitle {
+        a {
+          font-size: 1.5rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .dRInfo {
+      .dRInfoContainer {
+        padding: 0 1rem;
+
+        .dRInfoInner {
+          width: 17.5rem;
+
+          h1 {
+            font-size: 2rem;
+            word-spacing: 0.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            word-spacing: 0.5rem;
+          }
+        }
+
+        .dRInfoImg {
+          width: 17.5rem;
+          height: 24rem;
+
+          .dRInfoImgInner {
+            a {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+
+    .dRLandmarks {
+      padding: 2rem 0;
+      .dRLandmarksContainer {
+        margin: 0.5rem 0;
+        .dRLandmarksInner {
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
