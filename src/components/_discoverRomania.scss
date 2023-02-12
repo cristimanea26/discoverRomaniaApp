@@ -9,9 +9,9 @@
 
   .dRBanner {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
     width: 100%;
     height: 100vh;
     background-image: url('../../assets/images/discoverRomaniaImg01.png');
@@ -19,10 +19,6 @@
     background-size: cover;
 
     .dRBannerTitle {
-      position: relative;
-      text-align: center;
-      padding: 0 1rem;
-
       h1,
       h2,
       p,
@@ -61,10 +57,6 @@
   }
 
   .dRInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     width: 100%;
     background-color: $colorA;
 
@@ -124,7 +116,6 @@
           background-image: url('../../assets/images/discoverRomaniaImg02.png');
           background-repeat: no-repeat;
           background-size: cover;
-          text-align: center;
           -webkit-transition: $transitionTime;
           -moz-transition: $transitionTime;
           -ms-transition: $transitionTime;
@@ -250,6 +241,7 @@
   .discoverRomania {
     .dRBanner {
       .dRBannerTitle {
+        padding: 2.5rem 1rem;
         h1 {
           font-size: 3.5rem;
         }
@@ -271,7 +263,7 @@
         padding: 0 1rem;
 
         .dRInfoInner {
-          width: 25rem;
+          width: 25.25rem;
           padding: 2.5rem 0 0.25rem 0;
 
           p {
@@ -280,8 +272,8 @@
         }
 
         .dRInfoImg {
-          width: 25rem;
-          height: 30rem;
+          width: 25.25rem;
+          height: 36.25rem;
 
           .dRInfoImgInner {
             a {
@@ -319,7 +311,7 @@
         padding: 0 1rem;
 
         .dRInfoInner {
-          width: 17.5rem;
+          width: 100%;
 
           h1 {
             font-size: 2rem;
@@ -334,8 +326,8 @@
         }
 
         .dRInfoImg {
-          width: 17.5rem;
-          height: 24rem;
+          width: 100%;
+          height: 26.25rem;
 
           .dRInfoImgInner {
             a {

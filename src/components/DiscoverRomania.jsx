@@ -30,12 +30,7 @@ const DiscoverRomania = () => {
       </m.div>
       <div className='dRInfo'>
         <div className='dRInfoContainer'>
-          <m.div
-            className='dRInfoInner'
-            variants={fadeIn('right', 'tween', 0.75, 1)}
-            initial='hidden'
-            animate='show'
-          >
+          <div className='dRInfoInner'>
             <h1>Explore the nature</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
@@ -50,50 +45,30 @@ const DiscoverRomania = () => {
               Suspendisse potenti. Nam iaculis metus non nibh porttitor
               malesuada.
             </p>
-          </m.div>
-          <m.div
-            className='dRInfoImg'
-            variants={fadeIn('left', 'tween', 0.75, 1)}
-            initial='hidden'
-            animate='show'
-          >
+          </div>
+          <div className='dRInfoImg'>
             <div className='dRInfoImgInner'>
               <a href='#explorethenature'>Explore the nature</a>
             </div>
-          </m.div>
+          </div>
         </div>
       </div>
       <div className='dRLandmarks'>
-        <m.div
-          className='dRLandmarksContainer'
-          variants={fadeIn('down', 'tween', 0.75, 1)}
-          initial='hidden'
-          animate='show'
-        >
+        <div className='dRLandmarksContainer'>
           <div className='dRLandmarksInner countryside'>
             <a href='#countryside'>COUNTRYSIDE</a>
           </div>
-        </m.div>
-        <m.div
-          className='dRLandmarksContainer'
-          variants={fadeIn('right', 'tween', 0.75, 1)}
-          initial='hidden'
-          animate='show'
-        >
+        </div>
+        <div className='dRLandmarksContainer'>
           <div className='dRLandmarksInner cities'>
             <a href='#cities'>CITIES</a>
           </div>
-        </m.div>
-        <m.div
-          className='dRLandmarksContainer'
-          variants={fadeIn('up', 'tween', 0.75, 1)}
-          initial='hidden'
-          animate='show'
-        >
+        </div>
+        <div className='dRLandmarksContainer'>
           <div className='dRLandmarksInner landmarks'>
             <a href='#landmarks'>LANDMARKS</a>
           </div>
-        </m.div>
+        </div>
       </div>
     </div>
   );

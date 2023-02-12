@@ -105,6 +105,8 @@ p,
 a,
 span {
   text-shadow: $textShadow;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -118,17 +120,10 @@ img {
   align-items: center;
   flex-flow: column wrap;
   width: 100%;
+  background-color: $colorF;
 }
 
 .App {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(136, 136, 136, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
-
   .content {
     min-height: 100vh;
     text-align: center;
