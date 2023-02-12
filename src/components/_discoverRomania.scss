@@ -13,12 +13,14 @@
     align-items: center;
     flex-flow: column wrap;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('../../assets/images/discoverRomaniaImg01.png');
     background-repeat: no-repeat;
     background-size: cover;
 
     .dRBannerTitle {
+      padding: 0 1rem;
+
       h1,
       h2,
       p,
@@ -241,7 +243,6 @@
   .discoverRomania {
     .dRBanner {
       .dRBannerTitle {
-        padding: 2.5rem 1rem;
         h1 {
           font-size: 3.5rem;
         }
