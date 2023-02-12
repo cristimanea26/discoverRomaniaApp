@@ -224,10 +224,6 @@
 //* MEDIA QUERIES
 @media screen and (max-width: 1366px) {
   .discoverRomania {
-    .dRBanner {
-      height: 42.5rem;
-    }
-
     .dRInfo {
       .dRInfoContainer {
         padding: 5rem 1rem 2.5rem 1rem;
@@ -246,6 +242,8 @@
 @media screen and (max-width: 768px) {
   .discoverRomania {
     .dRBanner {
+      height: 42.5rem;
+
       .dRBannerTitle {
         h1 {
           font-size: 3.5rem;
