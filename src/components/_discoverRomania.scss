@@ -13,7 +13,7 @@
     align-items: center;
     flex-flow: column wrap;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url('../../assets/images/discoverRomaniaImg01.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -224,6 +224,10 @@
 //* MEDIA QUERIES
 @media screen and (max-width: 1366px) {
   .discoverRomania {
+    .dRBanner {
+      height: 36.25rem;
+    }
+
     .dRInfo {
       .dRInfoContainer {
         padding: 5rem 1rem 2.5rem 1rem;
@@ -242,8 +246,6 @@
 @media screen and (max-width: 768px) {
   .discoverRomania {
     .dRBanner {
-      height: 36.25rem;
-
       .dRBannerTitle {
         h1 {
           font-size: 3.5rem;
