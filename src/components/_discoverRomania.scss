@@ -14,7 +14,7 @@
     flex-flow: column wrap;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/images/discoverRomaniaImg01.png');
+    background-image: url("../../assets/images/discoverRomaniaImg01.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -115,7 +115,7 @@
           position: relative;
           width: 100%;
           height: 100%;
-          background-image: url('../../assets/images/discoverRomaniaImg02.png');
+          background-image: url("../../assets/images/discoverRomaniaImg02.png");
           background-repeat: no-repeat;
           background-size: cover;
           -webkit-transition: $transitionTime;
@@ -183,15 +183,15 @@
         transition: $transitionTime;
 
         &.countryside {
-          background-image: url('../../assets/images/discoverRomaniaImg03.png');
+          background-image: url("../../assets/images/discoverRomaniaImg03.png");
         }
 
         &.cities {
-          background-image: url('../../assets/images/discoverRomaniaImg04.png');
+          background-image: url("../../assets/images/discoverRomaniaImg04.png");
         }
 
         &.landmarks {
-          background-image: url('../../assets/images/discoverRomaniaImg05.png');
+          background-image: url("../../assets/images/discoverRomaniaImg05.png");
         }
 
         &:hover {
