@@ -17,7 +17,7 @@ const DiscoverRomania = () => {
           initial="hidden"
           animate="show"
         >
-          <h2>DISCOVERR</h2>
+          <h2>DISCOVER</h2>
           <h1>ROMANIA</h1>
           <p>This project was made using the following design:</p>
           <a
